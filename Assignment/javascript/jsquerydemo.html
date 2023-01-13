@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <script src="../Day 10/js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+          alert ("Hello");
+          $("p,div").each(function(index,element){
+            alert(index+$(element).html())
+          });
+          $('#btn').click(function(){
+            var nm=$('input[type="text"]').val();
+            alert("name:"+nm)
+          })
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("div,p").css({
+                "color":"red",
+                "border":"2px solid yellow",
+                "background-color":"cyan"
+            })
+        })
+    </script>
+</head>
+<body>
+    <input type="text" name="nm" id="nm">
+    <button type="button" name="btn" id="btn">Show Value</button>
+    <div>Pankaj</div>
+    <div>This is PANKAJ</div>
+    <p>NEYMAR</p>
+    <p>BADDASSSSSssssss</p>
+    <h3>NEYMAR JR 10</h3>
+</body>
+</html>

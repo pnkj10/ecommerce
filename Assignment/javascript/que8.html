@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function pow(){
+            x=document.getElementById("num1").value;
+            y=document.getElementById("num2").value;
+           //var ans=Math.pow(x,y);
+             var ans=1;
+             for(i=0;i<y;i++){
+                
+                ans=ans*x;
+             }
+            document.getElementById("my").innerHTML=ans;
+        }
+    </script>
+</head>
+<body>
+    num1: <input type="number" name="num1" id="num1"><br>
+    num2: <input type="number" name="num2" id="num2"><br>
+    <button onclick="pow()">Submit</button>
+    <div id="my"></div>
+</body>
+</html>

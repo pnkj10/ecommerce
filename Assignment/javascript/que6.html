@@ -1,0 +1,25 @@
+<!-- Accept an integer value and a message from user and print the message that many number of times.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function sumofdigit(){
+            var num=document.getElementById("nm").value;
+            var sum=0;
+            while(num !=0){
+                rem=num%10;
+                num=num/10;
+                sum+=rem;
+            }
+            document.getElementById("my").innerHTML=Math.floor(sum);
+        }
+    </script>    
+
+</head>
+<body>
+    
+    <input type="number" name="nm" id="nm" placeholder="Enter 5 Digit Number">Number<br>
+    <button onclick="sumofdigit()">Submit</button>
+    <div id="my"></div>
+</body>
+</html>

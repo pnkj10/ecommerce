@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function table(){
+            num=parseInt(document.getElementById("num").value);
+            for(i=1;i<=10;i++){
+            sol=num*i;
+            
+            document.getElementById("my").innerHTML+=num+" * "+i+" = "+sol+"<br>"
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="number" name="num" id="num"required> <br>
+    <button type="button" id="btn" onclick="table()">Submit</button>
+    <div id="my"></div>
+</body>
+</html>

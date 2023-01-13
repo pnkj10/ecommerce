@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function EvenNo() {
+            i = 1;
+            num = parseInt(document.getElementById("nm").value);
+            while (!(i > num)) {
+
+                if (i % 2 == 0) {
+                    document.getElementById("my").innerHTML += i+"<br>"
+                }
+                i++;
+
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <input type="number" name="nm" id="nm">Number <br>
+    <button onclick="EvenNo()">Enter</button>
+    <div id="my"></div>
+
+
+</body>
+
+</html>

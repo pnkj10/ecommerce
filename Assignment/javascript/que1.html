@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function largestnumber() {
+          
+            a = Number(document.getElementById("1").value);
+            b = Number(document.getElementById("2").value);
+            c = Number(document.getElementById("3").value);
+
+            if (a > b && a > c) {
+                
+                document.getElementById("pankaj").innerHTML="Greatest Number is " + a;
+            }
+            else if (b > a && b > c) {
+                document.getElementById("pankaj").innerHTML="Greatest Number is " + b;
+            }
+            else if (c > a && c > b) {
+                document.getElementById("pankaj").innerHTML="Greatest Number is " + c;
+            }
+
+        }
+
+
+    </script>
+
+</head>
+
+<body style="border: 2px solid black;margin-left: 40px ; ">
+    <center>
+        <h1 align="center">Positive Largest number among three numbers</h1>
+        <hr color="black">
+
+        Enter 1st Number: <input type="text" name="1st" id="1" align="center"></input><br>
+        Enter 2nd Number: <input type="text" name="2nt" id="2"></input><br>
+        Enter 3rd Number: <input type="text" name="3rd" id="3"></input><br>
+
+        <hr color="black">
+        <button onclick="largestnumber()">OK</button>
+    </center>
+    <div id="pankaj">
+
+    </div>
+</body>
+
+</html>

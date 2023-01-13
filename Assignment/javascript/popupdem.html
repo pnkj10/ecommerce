@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function showmessage(){
+        console.log(event);
+        window.alert("Hello World")
+        }
+        function showconfirm(){
+            ans=confirm("on click y/n?");
+            if(ans){
+                alert(ans)
+            }
+            else{
+            alert
+            }
+        }
+        function showaddition(){
+            num1=prompt("enter num1");
+            num2=prompt("enter num2");
+            addition=parseInt(num1)+parseInt(num2);
+            alert=("addition="+addition);
+
+        }
+    </script>
+</head>
+<body>
+    <script>
+        console.log(window.location);
+        document.write("Hello world!");
+    </script>
+
+    <button type="button" name="btn" id="btn" onclick="showmessage(event)">Show Message</button><br>
+    <button type="button" name="btn" id="btn" onclick="showconfirm()">Show Confirm</button><br>
+    <button type="button" name="btn" onclick="showaddition()">show addition</button>
+</body>
+</html>

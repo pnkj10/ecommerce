@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function shownew(){
+            nm=document.getElementById("nm").value;
+            addr=document.getElementById("addr").value;
+            win=window.open("new window");
+            win.document.write("Name:"+nm +"<br>"+"Address"+addr);
+        }
+    </script>
+</head>
+<body>
+    Name=<input type="text" name="nm" id="nm"><br>
+    Address=<input type="text" name="addr" id="addr"><br>
+    <button type="button" name="btn" id="btn" onclick="shownew()">Show Data</button>
+    
+</body>
+</html>

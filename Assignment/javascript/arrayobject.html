@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        var prodarr = [{ pid: 1, pname: "Chair", price: 2345 },
+        { pid: 2, pname: "Table", price: 5345 },
+        { pid: 3, pname: "Sofa", price: 60000 }];
+        function displaydata() {
+            var str = "<table border='2'><tr><th>Product Id</th><th>Product Name</th><th>Price</th></tr>";
+            for (var ob of prodarr) {
+                str+=`<tr><td>${ob.pid}</td><td>${ob.pname}</td><td>${ob.price}</td></tr>`
+            }
+            str += "</table>";
+            document.getElementById("mydiv").innerHTML = str;
+
+
+        }
+        //  function dispalyform(){
+        //     document.getElementById("mydiv1").classList.remove("myclass");
+        //     document.getElementById("mydiv1").classList.add("myc");
+
+        //  }
+    </script>
+
+</head>
+
+
+<body onload="displaydata()">
+    <button type="button" name="btn" onclick="dispalyform()">Add product</button>
+    <div id="mydiv1" class="myclass">
+        <form id="myfrm">
+            Product id: <input type="text" name="pid" id="pid"><br>
+            Product Name: <input type="text" name="pname" id="pname"><br>
+            Price: <input type="text" name="price" id="price"><br>
+            <button type="button" name="btn" id="btn" onclick="addproduct()">Add data</button>
+        </form>
+    </div>
+    <div id="mydiv">
+
+    </div>
+
+</body>
+
+</html>
