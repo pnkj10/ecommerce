@@ -1,0 +1,17 @@
+http://localhost:8000/create
+
+
+
+
+
+
+
+{
+     "name": "Pankaj",
+        "email": "pankja@email.com",
+        "age": "22",
+        "mobile": "1234567890",
+        "work": "test",
+        "add": "testdata",
+        "desc": "testdata"
+}
